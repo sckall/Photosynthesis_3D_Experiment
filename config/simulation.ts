@@ -1,0 +1,62 @@
+export const SIMULATION_CONFIG = {
+  MAX_HISTORY: 1200,
+  SIM_SPEED: 0.5,
+  TIME_STEP: 0.1,
+  
+  LIGHT: {
+    MIN: 0,
+    MAX: 50000,
+    DEFAULT: 12000,
+    NORMALIZATION_FACTOR: 50000,
+  },
+  
+  CO2: {
+    MIN: 0,
+    MAX: 1000,
+    DEFAULT: 420,
+    NORMALIZATION_FACTOR: 1000,
+  },
+  
+  STANDARD_CONDITIONS: {
+    LIGHT_INTENSITY: 12000,
+    CO2_LEVEL: 420,
+  },
+  
+  POOL_SIZES: {
+    C5_BASE: 100,
+    C3_BASE: 200,
+    ENERGY_MAX: 200,
+    PRECURSOR_TOTAL: 200,
+  },
+  
+  RATE_SCALES: {
+    P_MAX: 200,
+  },
+  
+  KINETIC_CONSTANTS: {
+    K_I: 12000,
+    K_C: 50,
+    EPS: 0.08,
+    ALPHA: 0.7,
+  },
+  
+  SMOOTHING: {
+    LIGHT_SMOOTHING_FACTOR: 0.005,
+    CO2_SMOOTHING_FACTOR: 0.005,
+  },
+  
+  ENERGY_GENERATION: {
+    RATE_COEFFICIENT: 1.25,
+    INITIAL_ACCUMULATOR: 0.4,
+  },
+  
+  CO2_GENERATION: {
+    RATE_COEFFICIENT: 0.714,
+    INITIAL_ACCUMULATOR: 0.7,
+  },
+  
+  CLAMP_VALUES: {
+    MIN: 0,
+    MAX: 1000,
+  },
+} as const;

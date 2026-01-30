@@ -1,0 +1,41 @@
+# 3D Particles Directory
+
+This directory is reserved for particle system components such as:
+- CO₂ particles
+- O₂ particles
+- H₂O particles
+- Electron particles
+- Photon particles
+- Sugar particles
+
+## Usage
+
+Create new particle system components here:
+
+```typescript
+// components/3d/particles/CO2Particles.tsx
+interface CO2ParticlesProps {
+  count: number;
+  active: boolean;
+}
+
+export function CO2Particles({ count, active }: CO2ParticlesProps) {
+  const particles = useMemo(() => {
+    return Array.from({ length: count }, (_, i) => ({
+      id: i,
+      position: [Math.random() * 10, Math.random() * 10, 0],
+    }));
+  }, [count]);
+
+  return (
+    <group>
+      {particles.map((particle) => (
+        <mesh key={particle.id} position={particle.position}>
+          <sphereGeometry args={[0.1, 16, 16]} />
+          <meshStandardMaterial color="#6b7280" />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+```

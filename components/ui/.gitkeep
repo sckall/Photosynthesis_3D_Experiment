@@ -1,0 +1,24 @@
+# UI Components Directory
+
+This directory is reserved for reusable UI components such as:
+- Buttons
+- Inputs
+- Modals
+- Tooltips
+- Other common UI elements
+
+## Usage
+
+Create new UI components here following the pattern:
+
+```typescript
+// components/ui/Button.tsx
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
+
+export function Button({ label, onClick }: ButtonProps) {
+  return <button onClick={onClick}>{label}</button>;
+}
+```

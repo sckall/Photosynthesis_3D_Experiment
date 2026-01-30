@@ -1,0 +1,19 @@
+# Charts Components Directory
+
+This directory is reserved for chart-related components such as:
+- Line charts
+- Bar charts
+- Pie charts
+- Custom data visualizations
+
+## Current Implementation
+
+The main chart component is currently at the parent level:
+- `../RealTimeChart.tsx` - Real-time data visualization
+
+## Future Components
+
+Consider adding:
+- `HistogramChart.tsx` - For distribution analysis
+- `ScatterPlot.tsx` - For correlation analysis
+- `HeatMap.tsx` - For 2D data visualization
