@@ -800,5 +800,5 @@ console.log('Light Intensity:', lightIntensity);
 
 <div align="center">
   <p>如果这个项目对您有帮助，请给我们一个 ⭐️</p>
-  <p>Made with ❤️ by 叶绿体 3D 探索器团队</p>
+  <p>Made with ❤️ by 莴韭</p>
 </div>
