@@ -11,7 +11,9 @@
   [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?logo=vite)](https://vitejs.dev/)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
   
-  [在线演示](https://ai.studio/apps/drive/18CUSLTFoCWhyCMIhZIO1tSo9Y0yOL6UY) · [快速开始](#快速开始) · [功能特性](#功能特性) · [API 文档](#api-文档)
+
+  **[🌐 在线演示](https://sckall.github.io/Photosynthesis_3D_Experiment/)** · **[📖 快速开始](#-快速开始)** · **[✨ 功能特性](#-功能特性)** · **[📚 API 文档](#-api-文档)**
+
 </div>
 
 ---
