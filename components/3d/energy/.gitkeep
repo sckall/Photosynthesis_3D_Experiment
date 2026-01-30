@@ -1,0 +1,32 @@
+# 3D Energy Components Directory
+
+This directory is reserved for energy-related 3D components such as:
+- ATP molecules
+- NADPH molecules
+- ADP molecules
+- NADP+ molecules
+- Energy transfer animations
+- Photon particles
+
+## Usage
+
+Create new energy-related 3D components here:
+
+```typescript
+// components/3d/energy/ATPMolecule.tsx
+interface ATPMoleculeProps {
+  position: [number, number, number];
+  animated?: boolean;
+}
+
+export function ATPMolecule({ position, animated = false }: ATPMoleculeProps) {
+  return (
+    <group position={position}>
+      <mesh>
+        <sphereGeometry args={[0.3, 32, 32]} />
+        <meshStandardMaterial color="#a3e635" emissive="#22d3ee" />
+      </mesh>
+    </group>
+  );
+}
+```

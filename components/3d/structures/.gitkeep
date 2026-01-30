@@ -1,0 +1,29 @@
+# 3D Structures Directory
+
+This directory is reserved for 3D structural components such as:
+- Thylakoid membranes
+- Granum stacks
+- Stroma structures
+- Chloroplast envelope
+- Other organelle structures
+
+## Usage
+
+Create new 3D structure components here:
+
+```typescript
+// components/3d/structures/Thylakoid.tsx
+interface ThylakoidProps {
+  position: [number, number, number];
+  scale?: number;
+}
+
+export function Thylakoid({ position, scale = 1 }: ThylakoidProps) {
+  return (
+    <mesh position={position} scale={scale}>
+      <cylinderGeometry args={[1, 1, 0.2, 32]} />
+      <meshStandardMaterial color="#4ade80" />
+    </mesh>
+  );
+}
+```
